@@ -2,10 +2,11 @@ import { UpdatePanel } from './UpdatePanel';
 
 const jsb = (<any>window).jsb;
 
-// Custom manifest removed the following assets:
+// Custom manifest removed the following assets: // 自定义清单删除了以下资产：
 // 1. res/raw-assets/2a/2a40e5e7-4c4a-4350-9e5d-76757755cdd2.png
 // 2. res/raw-assets/2d/2d86a854-63c4-4b90-8b88-a4328b8526c2.png
-// So when custom manifest used, you should be able to find them in downloaded remote assets
+// So when custom manifest used, you should be able to find them in downloaded remote assets // 因此，当使用自定义清单时，您应该能够在下载的远程资产中找到它们
+
 var customManifestStr = JSON.stringify({
     "packageUrl": "http://192.168.55.13:5502/remote-assets/",
     "remoteManifestUrl": "http://192.168.55.13:5502/remote-assets/project.manifest",
